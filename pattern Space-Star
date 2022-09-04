@@ -1,0 +1,45 @@
+package fundamentals;
+import java.util.Scanner;
+public class helloWorld{
+
+	
+		public static void main(String args[]) {
+			Scanner scan=new Scanner(System.in);
+			System.out.println("Enter the value of row and Colums");
+			int n=scan.nextInt();
+			
+			int i=1;
+			while(i<=n) {
+				
+				int spaces=1;
+				while(spaces<=n-i){
+					
+					System.out.print(' ');
+					spaces++;
+				}
+					int star=1;
+					while(star <=i) {
+						System.out.print("*");
+						star++;
+						
+					}
+					
+				
+				System.out.println();
+				i++;
+				
+				
+				
+			}
+			
+
+           
+	}
+}
+Enter the value of row and Colums
+5
+    *
+   **
+  ***
+ ****
+*****
