@@ -1,0 +1,51 @@
+package fundamentals;
+import java.util.*;
+
+public class helloWorld{
+
+
+public static int[] takeInput(){
+	Scanner S=new Scanner(System.in);
+	System.out.println("Enter the number of element in Array : ");
+	int n=S.nextInt();
+	int arr[]=new int[n];
+	for(int i=0;i<n;i++){
+		System.out.print("Enter the "+i+"th element : ");
+		arr[i]=S.nextInt();
+	}
+	return arr;
+}
+public static int largest(int[] arr) {
+	int max=Integer.MIN_VALUE;
+	for(int i=0;i<arr.length;i++) {
+		if(arr[i]>max) {
+			max=arr[i];
+
+		}
+	}
+	return max;
+}
+
+
+		public static void main(String args[]) {
+		int[] arr= takeInput();
+		 System.out.println(" largest of the array "+largest(arr));
+		
+}
+}
+		
+		
+		
+			
+
+
+out put is
+
+Enter the number of element in Array : 
+5
+Enter the 0th element : 78
+Enter the 1th element : 90
+Enter the 2th element : 78
+Enter the 3th element : 102
+Enter the 4th element : 556
+ largest of the array 556
