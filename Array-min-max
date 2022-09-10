@@ -1,0 +1,63 @@
+package fundamentals;
+import java.util.*;
+
+public class helloWorld{
+
+
+public static int[] takeInput(){
+	Scanner S=new Scanner(System.in);
+	System.out.println("Enter the number of element in Array : ");
+	int n=S.nextInt();
+	int arr[]=new int[n];
+	for(int i=0;i<n;i++){
+		System.out.print("Enter the "+i+"th element : ");
+		arr[i]=S.nextInt();
+	}
+	return arr;
+}
+public static int largest(int[] arr) {
+	int max=Integer.MIN_VALUE;
+	for(int i=0;i<arr.length;i++) {
+		if(arr[i]>max) {
+			max=arr[i];
+
+		}
+	}
+	return max;
+}
+
+public static int smallest(int[] arr) {
+	int min=Integer.MAX_VALUE;
+	for(int i=0;i<arr.length;i++) {
+		if(arr[i]<min) {
+			min=arr[i];
+
+		}
+	}
+	return min;
+}
+
+		public static void main(String args[]) {
+		int[] arr= takeInput();
+		 System.out.println("largest of the array "+largest(arr));
+		 System.out.println("smallest of the array "+smallest(arr));
+		
+}
+}
+		
+		
+		
+			
+
+
+
+
+Enter the number of element in Array : 
+5
+Enter the 0th element : 45
+Enter the 1th element : 90
+Enter the 2th element : 78
+Enter the 3th element : 98
+Enter the 4th element : 86
+ largest of the array 98
+ smallest of the array 45
